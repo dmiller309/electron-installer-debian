@@ -202,7 +202,7 @@ var getOptions = function (data, defaults, callback) {
     options.description = options.description.replace(/[\r\n]+/g, ' ')
   }
 
-  if (options.productDescription) {
+  if (options.productDescription && false) {
     // Ensure blank lines have the "." that denotes a blank line in the control file.
     options.productDescription = options.productDescription.replace(/^$/m, '.')
     // Wrap the extended description to avoid lintian warning about
